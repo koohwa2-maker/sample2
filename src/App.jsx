@@ -1,15 +1,21 @@
-import { useState } from "react";
-import heroImg from "./assets/hero.png";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import "./App.css";
+import Body from "./Body.jsx";
+import Footer from "./Footer";
+
+function Header() {
+  return (
+    <header>
+      <h1>header</h1>
+    </header>
+  );
+}
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1></h1>
+      <Header />
+      <h1>헬로우 리액트</h1>
+      <Body />
+      {/* <Footer /> */}
     </>
   );
 }
